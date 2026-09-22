@@ -1,0 +1,64 @@
+# Epistemic Protocol: Application Layer
+
+This defines how `references/ruleset.md` gets invoked and reported: depth, severity, message format, and the citation-chain mechanism. It introduces no new epistemic content—every check below maps to a rule already stated there. Read it alongside that file and the evidence audit; this one is about output, not truth.
+
+## Depth: two tiers
+
+**General Discovery: default.** Runs Rules 1 through 7 against the claim and whatever sources it directly cites, at face value. This is the standard, complete check; it runs whenever a depth isn't specified.
+
+**First-Principles: advanced.** Extends General Discovery recursively: every load-bearing source cited in the claim's support is itself run through Rules 1 through 7, and so is every load-bearing source cited by *that* source, continuing toward primary sources or a stopping condition (below). First-Principles contains General Discovery—it is a greater depth, not a different check.
+
+Depth is a request, not an assumption. Escalating from General Discovery to First-Principles is offered by the checker, never applied silently—a claim that clears General Discovery is reported as such, with an offer to go deeper, not as fully settled.
+
+*Why not three tiers.* An earlier draft of this layer included a cheaper, always-on baseline pass—internal consistency only, no external check—meant to run ambiently on any load-bearing claim. It was dropped. A pass that only checks for self-contradiction clears almost everything, because most unsound claims are wrong about the world, not wrong about logic; reporting that pass by default manufactures exactly the unearned credit Rule 1 exists to prevent, since a shallow, ambient "no flags" reads as "basically fine" whether or not anything of substance was actually checked. Depth is now a choice between two real options, not a spectrum with an automatic floor.
+
+## Output requirements
+
+- **Name the tier.** Every report states whether it ran at General Discovery or First-Principles depth. The two must never be visually or textually interchangeable.
+- **Non-blocking.** A flag annotates the specific claim it concerns. It does not halt or gate the rest of a response.
+- **Passes get the same modesty as failures.** Report a clean result as "clears every check run at [tier] depth"—never as "is true" or "is correct." That distinction is the entire protocol compressed into one sentence.
+
+## Severity
+
+Four outcomes, not two—a binary pass/fail collapses distinctions the ruleset already makes.
+
+| Severity | Meaning | Maps to | Occurs at |
+|---|---|---|---|
+| **Disqualifying** | The claim cannot be assessed as presented. | Rule 3 failure, or a total Rule 7 burden failure | Either tier |
+| **Evidentiary gap** | Definitions hold up, but the claim falls short of the tier its own scope calls for. | Rule 4, relative to its domain-appropriate ceiling | Either tier |
+| **Caution** | The claim clears its tier, but something about how it's supported is worth a second look. | Rule 5 or Rule 6 | Either tier |
+| **Unresolved** | A First-Principles trace hit a depth, search, or time cap before reaching a primary source or a cleared ceiling. | Rule 3's citation-mapping test, applied recursively | First-Principles only |
+
+Unresolved is not a fifth severity bolted on for completeness—it's the honest alternative to running a recursive trace unboundedly or stopping silently. A trace that hits its cap is reported exactly that way, with how far it got, rather than defaulting to a pass or a fail it hasn't earned.
+
+## Message format
+
+**Template:**
+> Per [Protocol Name], this claim requires your judgment—it leaves [Rule N: Name] unsatisfied at [tier] depth. [One to two sentences: the specific gap, not a restatement of the rule.]
+
+**By severity:**
+- *Disqualifying*: "Per Ismail's Credibility Checker, this claim can't be assessed as presented: it leaves Rule 3 (Audit the Definitions) unsatisfied. [The term is defined narrowly enough to make the conclusion trivial / it's used in two incompatible senses between the premise and the conclusion.]"
+- *Evidentiary gap*: "Per Ismail's Credibility Checker, this claim requires your judgment: it leaves Rule 4 (Establish the Hierarchy of Verification) unsatisfied at General Discovery depth. [It rests on a single study; its own scope is paradigm-level and would call for consilience before treating it as settled.]"
+- *Caution*: "Per Ismail's Credibility Checker, this claim clears General Discovery, but flags Rule 6 (Institutions Do Not Confer Infallibility): [its central source shares an author with the claim itself.]"
+- *Unresolved*: "Per Ismail's Credibility Checker, the citation chain for this claim could not be fully traced at First-Principles depth: [stopped three links deep at a source with no further citation, after N searches]. Treat as neither confirmed nor disqualified."
+
+A flag always names the rule number and short name, never just "fails a check"—the point of naming it is that the person can go look at the rule itself and disagree with the assessment on its own terms, per Rule 6.
+
+## The citation-chain mechanism
+
+This is what First-Principles depth actually executes, and it's the same three moves regardless of how many links deep it runs.
+
+**1. Recursion (Rules 5 and 6, extended).** A citation's venue, author prestige, and institutional backing carry the same zero evidentiary weight as the main claim's. A well-regarded author or outlet having been right before does not exempt this specific citation from the same audit everything else gets.
+
+**2. Relevance (Rule 3, extended).** A citation must map onto the specific point it's cited for, the same way a claim's own definitions must map onto what it claims to be about. A source can be fully credible on its own terms and still fail this test, if what it actually shows is adjacent to, rather than support for, the point it's attached to. Classify what a load-bearing citation actually does:
+  - *Adds*: independent replication, primary data or derivation, a genuinely isomorphic case from an unrelated domain (Rule 4's consilience test, one level down), or grounding for a term the claim depends on.
+  - *Does not add*: restates the claim without independent support (circular); addresses a related but distinct question (orthogonal); is itself a secondary summary with no primary source behind it (push the trace further); or shares an author, funder, or institution with the claim (self-referential—a Rule 6 flag, not automatically a failure, but a reason for the added scrutiny Rule 6 calls for).
+
+**3. Proportionality and stopping.** Not every citation gets this treatment—only load-bearing ones. Test: would the claim lose support if this citation were removed or wrong? If not, it's decorative; skip it. If so, trace it, until one of:
+  - a primary source is reached (the actual data, the actual formal artifact—not a report of it),
+  - a source has already cleared its own domain-appropriate ceiling under Rule 4, or
+  - a depth, search, or time cap is reached first—report as **Unresolved**, with the trace as far as it got, rather than continuing indefinitely or stopping without saying so.
+
+---
+
+*Once this has been read alongside the ruleset and the evidence audit, the three together are what skill-creator would turn into a SKILL.md: the audit as background the skill doesn't need to load at run time, the ruleset as the core instructions, and this file as the behavior spec for how the skill actually responds.*
