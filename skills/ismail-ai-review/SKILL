@@ -1,0 +1,41 @@
+---
+name: ismail-ai-review
+description: "Reviews and rewrites text against a 21-rule checklist for AI-writing fingerprints: inflated significance, promotional puffery, formulaic rhetorical patterns (negative parallelism, rule-of-three, vague attribution), robotic formatting (bullet and bold overuse, spaced em dashes), leftover AI-tool residue (citation artifacts like oaicite and turn0search, unfilled placeholder brackets, canned disclaimers), and citation integrity. Use this skill whenever the user asks to review, check, audit, clean up, edit, polish, 'humanize,' or 'de-AI' a piece of writing, asks whether text 'sounds like AI' or has 'AI tells' or 'AI fingerprints,' wants a final pass on a draft, email, report, or article before sending, or names 'Ismail AI Review' directly. Also apply it proactively as a self-check before delivering any substantial written deliverable that should read as plainly human-written, including reports, articles, blog posts, emails, and documentation."
+---
+
+# Ismail AI Review
+
+Checks text against a 21-rule house style catalog, adapted from Wikipedia's "Signs of AI Writing" essay, and rewrites it to remove AI-writing fingerprints.
+
+Created by Muhammed Ismail (independent researcher). GitHub: M-Ismail-ZA | ORCID: 0009-0000-3713-7105
+
+---
+
+## What this skill contains
+
+`references/rules.md` holds the full checklist: a quick-reference table of words to strike on sight, 21 numbered rules across five parts (content and substance, language and grammar, formatting and punctuation, communication and provenance, sourcing and citations), a "what not to police" section of unreliable signals, and a pre-publish self-check. It's short enough to read in full rather than search piecemeal.
+
+## How to review text
+
+### 1. Read the checklist first
+Load `references/rules.md` in full before reviewing anything.
+
+### 2. Check every rule, including the easy-to-miss ones
+Go through the submitted text against each of the 21 rules and the quick-reference word list, noting every violation found, however minor, rather than stopping after the first few obvious ones. Three things deserve particular attention. The quick-reference words need flagging wherever they actually appear in the text. The three negative-parallelism patterns and the rule-of-three groupings in Part 2 are easy to miss on a skim, despite showing up constantly in real drafts. And tool residue in Part 4 calls for a literal text search: look for artifact strings such as `oaicite`, `turn0search`, `[cite:`, `grok_card`, and `utm_source=`, since these are invisible on an ordinary read-through.
+
+### 3. Match the output to what was actually asked
+A request to check, review, audit, or flag issues, or to say whether text sounds like AI, calls for a findings list: each violation, the rule it breaks, and a one-line note, with no rewrite unless one is also requested. A request to fix, rewrite, clean up, humanize, de-AI, or polish calls for the rewritten version first, followed by a short list of what changed and why, unless the input is only a sentence or two, where a brief before-and-after covers it. Text pasted with no clear instruction, or a request to review and fix, calls for both: a short findings list followed by the rewrite, since that covers an open-ended ask completely. And before presenting a finished report, article, email, or similar deliverable that Claude drafted itself, this checklist doubles as a proactive self-check: run the draft through it, fix what it finds, and deliver the cleaner version without narrating that a check happened.
+
+### 4. Preserve the actual content
+This is about removing fingerprints, and the substance needs to stay exactly as it was. Claims, numbers, names, and facts all stay untouched, and an argument shouldn't get softened or strengthened along the way. When fixing a passage would require guessing at information that isn't in the original, for example replacing a vague attribution with a real source that isn't available, say so rather than inventing one.
+
+### 5. Apply the limiter before flagging anything
+Check Part 6 of the reference file ("What not to police") before calling something a violation. Perfect grammar, one instance of a transition word, formal tone by itself, and missing citations are all explicitly unreliable signals on their own, and flagging any of them just erodes trust in the rest of the review.
+
+---
+
+## Notes
+
+The rule catalog is adapted from Wikipedia's [*Signs of AI Writing*](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), a WikiProject AI Cleanup essay reorganized here from a detection field guide into prescriptive writing rules.
+
+These rules describe overused defaults and formulaic patterns rather than literal word bans. A single em dash or one instance of "delve" is fine on its own; what matters is frequency and context, weighed case by case rather than run against a list of forbidden words.
