@@ -106,5 +106,5 @@ Split by kind, same reasoning as [Ismail's Glossary](https://github.com/M-Ismail
 
 ## Author
 
-Muhammed Ismail, Independent Researcher
+Muhammed Ismail, Theoretical Mathematician 
 GitHub: [M-Ismail-ZA](https://github.com/M-Ismail-ZA) · ORCID: [0009-0000-3713-7105](https://orcid.org/0009-0000-3713-7105)
