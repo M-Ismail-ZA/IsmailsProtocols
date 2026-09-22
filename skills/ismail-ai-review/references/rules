@@ -1,0 +1,164 @@
+# AI-Writing Tells: Full Rule Reference
+
+Full rule catalog for the Ismail AI Review skill. Adapted from Wikipedia's *Signs of AI Writing* essay (WikiProject AI Cleanup). The original catalogs how to detect AI text; this version reorganizes the same patterns into rules for reviewing and rewriting it.
+
+**Calibration note.** Most people are bad at spotting AI text from style alone. One study on German-language theses found ordinary readers correctly identified AI text about 57% of the time and human text about 64% of the time: barely better than a coin flip. People who use AI tools heavily do much better, around 90% in a separate study, but they still misfire on roughly one in ten pages they flag. Ordinary human writing is drifting toward some of these same patterns too, as the tools become more common. Use this checklist to sharpen text.
+
+---
+
+## Quick reference: words to strike on sight
+
+| Category | Watch for |
+|---|---|
+| Significance-inflation | pivotal, plays a vital/key role, stands as / serves as a testament, underscores its importance, deeply rooted, an indelible mark, the evolving landscape of |
+| Superficial tacked-on analysis | highlighting, underscoring, reflecting, symbolizing, contributing to, fostering, encompassing, valuable insights |
+| Promotional puffery | boasts a, vibrant, rich, profound, showcasing, exemplifies, natural beauty, nestled, in the heart of, renowned, a diverse array of |
+| Vague attribution | industry reports, observers have cited, experts argue, some critics argue, several sources (when only one or two are actually cited) |
+| General AI vocabulary | delve, crucial, intricate, meticulous, tapestry, testament, robust, seamless, multifaceted, align with, garner, bolstered, comprehensive |
+| Dressed-up-for-no-reason swaps | utilize → use, authored → wrote, relocated → moved, attempted → tried, passed away → died |
+
+The specific words drift as models change. "Delve" was the signature overused word of 2023; current models lean more on "showcasing" and "highlighting." The underlying habit stays the same: reach for the plain, specific word before the abstract, impressive-sounding one.
+
+---
+
+## Part 1: Content & substance
+
+### 1. Don't inflate the significance of a plain fact
+An ordinary fact doesn't need a claim about its broader importance attached to it, especially not an unsourced one. Watch for a hedge that downplays a topic's importance right before the sentence turns around and asserts that importance anyway ("while a relatively minor update, this nonetheless represents..."). This shows up at any scale: even a founding date or a routine statistic can get wrapped in claims about "broader trends" or "enduring legacy" that the material simply doesn't support.
+
+> Instead of: "The bridge's reconstruction represents a pivotal moment that underscores the town's enduring resilience."
+> Write: "The bridge reopened in March after an eight-month closure."
+
+### 2. Don't perform notability by naming source types
+Establishing that something matters isn't done by cataloging the kinds of coverage it received: "featured in national media outlets," "profiled by a leading industry publication," "maintains an active social media presence." State what the coverage actually said, instead of noting that coverage exists and naming its category. The same goes for trivial, uncontested facts in body text: a plain citation carries the sourcing weight on its own, so the sentence doesn't need to argue for it.
+
+> Instead of: "The restaurant has been featured in coverage from several local outlets, underscoring its status as a well-known destination."
+> Write: "The restaurant has operated in the same location since 1987."
+
+### 3. Don't tack on superficial "-ing" analysis
+A factual sentence doesn't need a dangling participle clause at the end asserting what it means: "…highlighting its significance," "…reflecting broader trends," "…contributing to a growing conversation." A real, sourced connection deserves its own sentence with the source attached. An unsourced one should just be cut.
+
+> Instead of: "Membership grew 40% in 2025, reflecting the organization's growing influence in the sector."
+> Write: "Membership grew 40% in 2025."
+
+### 4. Skip the editorializing and the hollow summary
+An unrequested editorial aside doesn't belong in a piece that's supposed to stay neutral or factual: "it's important to note," "it's worth remembering," "worth noting that." State the fact and trust the reader to judge what matters. The same goes for a section that closes by restating itself under an "In summary," "In conclusion," or "Overall" heading, particularly one short enough that the restatement adds nothing. A section that has already made its point can just stop.
+
+### 5. Keep tone neutral; don't let it drift into promotional copy
+Even when a draft is asked to stay neutral, it can slide toward brochure or press-release language. Older, cruder output leans on obvious superlatives like "the best" or "unmatched." Newer output avoids those but still gushes in subtler ways: "a natural choice for," "exemplifies excellence in." Both versions have the same problem, and a revision note that claims to have "removed promotional language" is worth checking rather than taking on faith.
+
+> Instead of: "Nestled in the heart of downtown, our newly renovated office boasts a vibrant, collaborative atmosphere."
+> Write: "The renovated downtown office has open floor plans and more meeting rooms."
+
+### 6. Name sources, and don't overstate how many there are
+An unnamed collective authority, such as "industry observers," "experts argue," or "some critics say," isn't a real attribution. If a claim can't be tied to a named source, it probably doesn't belong in the draft as written. A related problem is implying a view is widely held when only one or two sources actually hold it ("scholars have argued…" when there's one scholar), or implying a list is a small sample of many when nothing suggests more examples exist.
+
+> Instead of: "Industry observers have noted the platform's growing influence."
+> Write: "Gartner's 2026 report ranked the platform third by market share."
+
+### 7. Don't default to a rigid "Challenges / Future Outlook" skeleton
+This rule is about the formula behind a section, separate from whatever topic sits inside it. Mentioning real challenges is completely normal on its own. The pattern worth avoiding is the mechanical shape: a section that opens with "Despite its [positive framing], X faces several challenges," moves through generic difficulties, and closes with a separate "Future Outlook" section built on vague, unearned optimism. A piece that genuinely needs to cover challenges and next steps can let the material decide that shape instead of reaching for this one by default.
+
+### 8. Don't open a piece by robotically defining its own title
+When a piece's subject isn't a proper name (a list, a general concept, a category), the opening line shouldn't define the title itself as though it were a dictionary entry for a standalone thing. Introduce the topic the way a person actually would.
+
+> Instead of: "Customer escalation paths refers to the structured routes by which customer complaints are elevated within an organization."
+> Write: "This document covers how customer complaints get escalated, and to whom."
+
+---
+
+## Part 2: Language & grammar
+
+### 9. Prefer plain words over dressed-up ones
+Word choice is covered in the quick-reference table above. When in doubt, plain and specific beats abstract and impressive.
+
+### 10. Watch for avoidance of plain "is" / "are"
+A plain copula swapped out for a fancier verb is easy to spot once you know to look: "serves as," "functions as," "operates as," "marks" instead of "is"; "boasts," "features," "maintains," "offers" instead of "has." A lead sentence that opens with "refers to" instead of "is" is doing the same thing.
+
+> Instead of: "The tool serves as a comprehensive solution that offers robust functionality."
+> Write: "The tool has three main functions."
+
+### 11. Watch for three specific negative-parallelism patterns
+All three set up a contrast the reader may not have needed, then knock it down for effect. The first pairs "not only" with "but also": "not only expanded the product line, but also strengthened customer loyalty." The second drops the "only" and states the negative flatly: "It's not a minor update, it's a complete redesign." The third reverses the order into "X rather than Y": "prioritized speed of delivery rather than polish." All three are the same underlying move; using one occasionally and deliberately is fine, but reaching for one as connective tissue throughout a document is the tell.
+
+> Instead of: "This isn't just a policy update, it's a fundamental shift in how we handle data."
+> Write: "This policy update changes how long we retain customer data."
+
+### 12. Watch for reflexive rule-of-three groupings
+Grouping descriptors or examples in threes, like "faster, simpler, more efficient," is a habit that can make a thin point sound more thorough than it actually is. One specific, true detail usually carries more weight than three vague ones.
+
+> Instead of: "The new process is faster, simpler, and more efficient."
+> Write: "The new process cuts approval time from five days to one."
+
+### 13. Resist over-varying word choice just to dodge repetition
+This one cuts against classic writing advice. Repeating the same plain noun, or just using a pronoun, is often clearer than reaching for a new synonym every time the same thing comes up. A document that calls the same product a "solution," then a "platform," then an "offering," then a "tool" within a few paragraphs isn't demonstrating range; it's making the prose harder to follow. Repeat the plain word when in doubt.
+
+### 14. Reach for the plain verb over its fancy synonym
+"Wrote" instead of "authored." "Moved" instead of "relocated." "Used" instead of "utilized." "Tried" instead of "attempted." "Died" instead of "passed away." None of the fancier options are wrong on their own, but defaulting to them across a document is a pattern worth breaking. Plain verbs simply read as more direct.
+
+### 15. Ordinary hedges and slightly loose phrasing are fine
+This runs against instinct, so it's worth saying plainly: words like "very," "perhaps," "probably," and slightly longer constructions like "in order to," "as a result of," "the fact that," are normal features of human writing. They don't need editing out in the name of tightness. In the same spirit, a concrete, checkable claim, such as "the first," "the only," or "one of the largest," deserves to be made when it's true and sourced, rather than reaching for vaguer significance language instead. A specific, falsifiable claim comes across as more confident than a hedge-free but vague one, and considerably more like something a person actually wrote.
+
+---
+
+## Part 3: Formatting & punctuation
+
+### 16. Formatting discipline
+Formatting habits carried over from readmes, slide decks, and listicles don't belong in ordinary prose. A list where every item is a bold term followed by a colon and a restating sentence should usually just be a paragraph instead, and the same goes for reaching for a bulleted or numbered list as the default structure for anything that would read fine as connected prose. Bolding key terms repeatedly through a document doesn't substitute for a well-built sentence.
+
+A few smaller habits are worth watching too: use sentence case in headings ("Quarterly results," rather than "Quarterly Results") unless house style calls for title case; skip emoji on headings and bullets in professional documents; skip a small table when a plain sentence or two would do; and keep heading levels sequential rather than jumping from an H1 to an H3, without a horizontal rule inserted before every heading out of leftover Markdown habit.
+
+### 17. Punctuation discipline
+The em dash is the clearest example of the habit this whole document is trying to break: reaching for it as a default substitute for a comma, colon, or parenthesis, often set off with spaces on both sides the way AI output usually renders it. Standard typographic style closes an em dash up tight against the surrounding words and saves it for a genuine break in the sentence, used sparingly. Quotation marks and apostrophes should stay consistent with house style, straight or curly, throughout a single document. This is a weak signal on its own, since curly quotes are the default in Word, macOS, and iOS, and standard under the Chicago Manual of Style. A double hyphen (--) as a dash substitute is easy to fix too: a proper dash, or a restructured sentence, works better.
+
+---
+
+## Part 4: Communication & provenance
+
+### 18. Never ship AI tool residue
+A draft that passed through an AI assistant at any point should get checked specifically for leftovers before it goes out. Conversational residue is the most obvious kind: "Certainly! Here's…", "I hope this helps!", "Would you like me to...", "Let me know if you need anything else," "here's a more detailed breakdown." Disclaimers or refusals sometimes bleed into the content itself, like "As an AI language model...", "as of my last update...", or "I can't offer medical advice, but I can..." Placeholders left unfilled are another giveaway: "[insert X here]," "[URL of source]," template brackets never replaced.
+
+A quieter kind is worth knowing by name, because it hides in plain sight on a normal read-through: tool-specific citation artifacts. Fragments like `contentReference`, `oaicite`, or `turn0search0` come from ChatGPT. `[cite: 1]` or `(start_span)` / `(end_span)` markers come from Gemini. `grok_card` tags come from Grok. Lenticular-bracket markers such as `【85†...】` come from DeepSeek. Tracking parameters like `utm_source=chatgpt.com`, `utm_source=openai`, or `referrer=grok.com` appended to a link are close to definitive proof that specific link came from a chatbot, even though that alone doesn't prove the surrounding prose did too.
+
+One more pattern rounds this out: narrated "compliance" language describing how the text was revised, such as "revised to ensure a neutral, balanced tone while preserving the original meaning," in place of the text simply making the edit and moving on.
+
+### 19. Don't dress up speculation as fact when sources are thin
+When research turns up little on a topic, the honest move is to say so plainly and stop, rather than filling the gap with plausible-sounding speculation dressed as though it were established. Watch for a sentence that concedes uncertainty and then asserts a specific claim anyway ("while not extensively documented, this likely..."), and for a subject's low public profile getting used as an explanation instead of an admitted research gap ("keeps details private" standing in for "we couldn't find this").
+
+> Instead of: "While specific information is limited, the region likely supports a wide range of wildlife given its climate."
+> Write: "We found no published data on wildlife in this region." (or omit the sentence)
+
+### 20. Describe what actually changed
+A commit message, revision note, or changelog entry should describe what changed, the way a person who did the work would describe it. Phrases like "ensures neutrality" or "complies with style guidelines" narrate compliance instead of saying what was actually added, removed, or fixed. Two specific habits are worth catching: mentioning what was deliberately left unchanged ("preserved the original structure while..."), which is an unusual thing for a person to volunteer, and describing content only by its sourcing status ("added sourced information and citations") instead of its substance.
+
+> Instead of: "Revised the summary section to ensure clarity and compliance with style guidelines while preserving the original structure."
+> Write: "Trimmed the summary from three paragraphs to one."
+
+---
+
+## Part 5: Sourcing & citations
+
+### 21. Citation integrity
+A citation needs to actually support the sentence it's attached to, which is worth checking directly rather than just confirming a citation is present at all. Fabricating a citation, statistic, quote, or study is obviously off the table. A subtler failure mode is the citation that's real but mismatched: a genuine, correctly formatted reference, even one with a real DOI or ISBN, that happens to point to a different work than the one being cited. A working link or a valid identifier doesn't guarantee the content behind it says what the sentence claims.
+
+Book citations need a page number, and a page number claimed by someone else's citation deserves a check to confirm it actually contains the claim. A citation with no page number, or one whose page doesn't hold up once checked, is a known failure pattern. Orphaned references are another thing to watch for: sources listed but never cited in the text, or named references that get used but never defined. These tend to slip in when text is reorganized or partially copied. A trivial, uncontroversial statement doesn't need elaborate in-text sourcing language, like "as reported by multiple outlets," on top of its citation; the citation alone is enough.
+
+---
+
+## Part 6: What not to police
+
+Not everything that feels off is actually a sign of AI writing, and treating these as violations just makes people second-guess normal variation. Perfect grammar is common among people who simply write cleanly, especially in professional settings. A mix of casual and formal register, or writing that reads as both clinical and emotional, can just as easily reflect a technical background, multiple contributors to one document, or someone's ordinary voice. A vague sense that something feels "bland" or "robotic" is only useful when it points to one of the specific patterns above; as a standalone impression, it's not actionable and it's easy to get wrong.
+
+The same caution applies to a few more specific-sounding signals. Formal or academic prose in general isn't the tell, since only certain words are overrepresented in AI text, and formality on its own isn't one of them. A single transition word like "additionally" or "furthermore" proves nothing by itself, even though AI overuses these words in aggregate, since the same habit shows up plenty in ordinary human essay-writing. And missing citations actually cut the opposite way from what most people assume: plenty of legitimate writing is under-sourced, while modern AI tools often do include citations, accurate or not.
+
+---
+
+## Before delivering: a fast self-check
+- Read it once for tone: does anything sound like a brochure, a press release, or a school-essay conclusion?
+- Scan for the quick-reference words and cut the ones that aren't earning their place.
+- Count the em dashes and check the spacing: rare and unspaced is normal, frequent and spaced is a tell.
+- Check every bullet list: would a sentence carry this better?
+- Check every citation: does it actually say what the sentence claims, including page numbers for books and the real target of any DOI?
+- Search the raw text for tool artifacts: "oaicite," "turn0search," "[cite:", "grok_card," "utm_source=," unfilled brackets.
+- Read the last line of every section: is it adding information, or just repeating the section?
+- Read any commit message, changelog entry, or revision note: does it describe what changed, or does it narrate compliance?
